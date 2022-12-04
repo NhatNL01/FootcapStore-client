@@ -46,7 +46,6 @@ const Card = ({ product, id, countStock, rating, numReviews }) => {
                   <Link to={`/product/${product.id}`}>
                     <ion-icon name='eye-outline'></ion-icon>
                     </Link>
-                  </a>
                 </button>
                 <div className='card-action-tooltip' id='card-label-3'>
                   Quick View
