@@ -43,8 +43,9 @@ const Card = ({ product, id, countStock, rating, numReviews }) => {
                   className='card-action-btn'
                   aria-labelledby='card-label-3'
                 >
-                  <a href={`/product/${product.id}`}>
+                  <Link to={`/product/${product.id}`}>
                     <ion-icon name='eye-outline'></ion-icon>
+                    </Link>
                   </a>
                 </button>
                 <div className='card-action-tooltip' id='card-label-3'>
@@ -55,7 +56,7 @@ const Card = ({ product, id, countStock, rating, numReviews }) => {
           </figure>
           <div className='card-content'>
             <h3 className='h3 card-title'>
-              <a href={`/product/${product.id}`}>{product.title}</a>
+              <Link to={`/product/${product.id}`}>{product.title}</Link>
             </h3>
             <data className='card-price'>
               {Math.round(
